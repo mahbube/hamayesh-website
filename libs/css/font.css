@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'yekan';
+	src: url('yekan.eot');
+	src: local('â˜º'), url('./fonts/yekan.woff') format('woff'), url('./fonts/yekan.ttf') format('truetype'), url('./fonts/yekan.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

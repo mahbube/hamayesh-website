@@ -1,0 +1,99 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background-image:url("./img/bgc2.jpg");
+	direction:rtl;
+	font-family:Tahoma;
+}
+.clear{
+	width:0px !important;
+	height:0px !important;
+	clear:both !important;
+	float:none !important;
+}
+
+div.slids{
+	width:700px; 
+	margin:10px auto;
+	border:#BC3325 solid 2px;
+	background-color:#F9ECD9;
+}
+div.slids > div{
+	overflow:hidden;
+	height:400px;
+	width:100px;
+	float:left;
+}
+div.slids div.ttl{
+	float:right;
+	width:100px;
+	height:inherit;
+}
+div.slids div.form{
+	float:none;
+	margin-right:150px;
+	margin-top:100px;
+}
+.msg_login{
+	width:680px; 
+	margin:10px auto ;
+	background-color:#F9ECD9;
+	border:#BC3325 solid 2px;
+	text-align:justify;
+	padding:5px 10px;
+	color:#291B1B;
+}
+.err{
+	text-align:center;
+	min-width:200px;
+	padding:5px ;
+	margin-bottom:5px;
+	font-size:20px;
+	background-color:#bc3325;
+	color:#fff;
+	border:dotted 2px #fff !important;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+}
+/*form css*/
+input{
+	width:180px;
+	height:27px;
+	border:2px #ea4231 solid;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	-o-border-radius:7px;
+	-ms-border-radius:7px;
+}
+input[type=submit]{
+	font-family:Tahoma;
+	font-size:15px;
+	border:2px #291B1B solid;
+	background-color:#bc3325;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	width:110px;
+	height:32px;
+	color:#fff;
+}
+input[type=submit]:hover{
+	background-color:#ea4231;
+}
+input:focus{
+	outline:none;
+}
+.correct{
+	width: 25px;
+	height: 30px;
+	background-image: url("./img/correct.png");
+	background-position: -80px;
+	background-repeat: no-repeat;
+	display: block;
+	/*transition: background-position 2s;*/
+}

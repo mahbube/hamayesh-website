@@ -1,0 +1,16 @@
+options -indexes
+
+RewriteEngine On
+
+RewriteRule ^(content|support|refree|internal)/([0-9a-z_.-]+).(htm|html)$ index.php?req=$1&menu=$2 [L,NC,T=text/html]
+
+RewriteRule ^(internal)/([0-9a-z_.-]+)/([0-9]+)/.*\.(htm|html)$ index.php?req=$1&menu=$2&idnews=$3&ttlnews=$4 [L,NC,T=text/html]
+
+RewriteRule ^([0-9a-z_.-]+)\.(css|js)$ index.php?req=file&filename=$1&filetype=$2 [NC,L]
+
+RewriteRule ^(.+)\.html$ index.php?req=$1 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php?req=er404
