@@ -36,12 +36,8 @@ function db_close(){
 	}
 }
 
-function db_get_rows($table_name,$where=1,$limit_f=0,$limit_e=0){
-	if(!$limit_e){
-		$res = db_query("SELECT * FROM $table_name WHERE $where ORDER BY id DESC ");
-	}else{
-		$res = db_query("SELECT * FROM $table_name WHERE $where ORDER BY id DESC  LIMIT $limit_f ,$limit_e");
-	}
+function db_get_rows($table_name,$where=1){
+	$res = db_query("SELECT * FROM $table_name WHERE $where ORDER BY id DESC ");
 	return db_fetch2array($res) ;
 }
 function db_get_num_rows($table_name,$where=1){
